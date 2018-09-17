@@ -57,6 +57,8 @@ func Disconnect(usb interface{}) { // 这里要求的是USB类型, 而USB是inte
 	switch v := usb.(type) {
 	case PhoneConnecter:
 		fmt.Println("Disconnect:", v.Name())
+	case int:
+		fmt.Println("int")
 	default:
 		fmt.Println("Unknown device.")
 	}

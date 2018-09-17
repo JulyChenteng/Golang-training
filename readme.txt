@@ -16,6 +16,8 @@ dm14.go——Go语言开发中的一些坑
 httpV1.go——go语言http服务器初体验
 httpV2.go——http服务器ServeMux初体验以及简易静态文件服务器的实现
 httpV3.go——http服务器更深层次理解以及实现自定义服务器
+setCookie.go——go语言http服务中cookie的使用
+HandleForm.go——go语言解析HTML中的表单
 
 
 test03.go——结合常量iota与<<运算符实现计算机存储单位的枚举
@@ -24,3 +26,8 @@ test10.go——声明一个底层类型为int的类型，并实现调用某个�
 
 exp01.go——为函数传递固定类型不定参数和任意类型的不定参数
 exp02.go——go语言闭包的演示
+exp03.go——go语言中string、int、int64类型之间的转化
+exp04.go——Go语言中反射的应用之reflect.Value
+exp05.go——利用goroutine和sync.WaitGroup创建工作池
+exp06.go——JSON序列化和反序列化
+exp07.go——实现heap的接口，并练习使用heap

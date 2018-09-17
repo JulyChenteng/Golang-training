@@ -31,6 +31,7 @@ func main() {
 		c3 <- true
 		close(c3)
 	}()
+
 	// <-c
 	for v := range c3 {
 		fmt.Println("case 3, receive:", v)
@@ -93,7 +94,7 @@ func main() {
 			select {
 			case v, ok := <-c9x:
 				if !ok {
-					fmt.Println("c1")
+					fmt.Println("c1", ok)
 					o <- true
 					break
 					if !a { //此方法无效, 因为即使c9x没有数据, select默认读到默认值0,所以不能在这里取消写
